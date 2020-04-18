@@ -1,3 +1,5 @@
+import "./imports";
+
 import "./scss/app.scss";
 
 import { getById } from "./utils";
