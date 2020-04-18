@@ -29,6 +29,7 @@
     "yaml-front-matter": "^4.1.0"
   },
   "dependencies": {
+    "embla-carousel": "^2.9.0",
     "feather-icons": "^4.28.0"
   }
 }
