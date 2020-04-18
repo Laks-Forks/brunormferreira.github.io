@@ -1,5 +1,5 @@
 import React from "react";
 
-import * as S from "styled-components";
+import * as S from "./styles";
 
-export default () => <h1>Component Nav</h1>;
+export default () => <S.NavWrapper>Nav</S.NavWrapper>;
