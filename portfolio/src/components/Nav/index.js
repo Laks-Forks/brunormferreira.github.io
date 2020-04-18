@@ -11,7 +11,10 @@ export default () => {
   console.log(state);
   return (
     <S.NavWrapper>
-      <Logo />
+      <S.NavContainer>
+        <Logo />
+        <p>asako</p>
+      </S.NavContainer>
     </S.NavWrapper>
   );
 };
