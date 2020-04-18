@@ -3,4 +3,4 @@ const query = document.querySelector.bind(document);
 const queryAll = document.querySelectorAll.bind(document);
 const getByClass = document.getElementsByClassName.bind(document);
 
-export { getById, query, queryAll, querySelector, getByClass };
+export { getById, query, queryAll, getByClass };

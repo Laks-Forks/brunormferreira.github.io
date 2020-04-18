@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 html {
@@ -16,14 +18,18 @@ body {
 
   --color-normal: #9da5b4;
   --color-hovered: #f5f5f5;
+  --color-primary: #85cff9;
 
   --transition: all 0.2s ease-in-out;
 
   height: 100%;
-  min-height: 580px;
 }
 #root {
+  background: var(--dark);
+
   height: 100%;
   min-height: 580px;
-  background: red;
+
+  display: flex;
+  flex-direction: column;
 }

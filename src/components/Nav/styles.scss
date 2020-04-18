@@ -1,0 +1,38 @@
+.nav-wrapper {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+}
+.nav__container {
+  display: flex;
+  width: 100%;
+  max-width: 1150px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logotipo__wrapper {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.nav__logotipo {
+  color: var(--color-normal);
+}
+.nav__logotipo--colored {
+  color: var(--color-primary);
+}
+.nav-buttons {
+  display: flex;
+}
+.nav-buttons__button {
+  transition: var(--transition);
+  color: var(--color-normal);
+  padding: 10px 2rem;
+}
+.nav-buttons__button--active {
+  color: var(--color-primary);
+}

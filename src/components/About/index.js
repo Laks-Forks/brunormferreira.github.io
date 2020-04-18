@@ -6,7 +6,12 @@ const photoURL = About.photo.match(/^htt(p|ps)/)
 
 export default function About() {
   return {
-    render: async () => {},
+    render: async () => {
+      const html = `
+        `;
+
+      return html;
+    },
     after: async () => {},
   };
 }
