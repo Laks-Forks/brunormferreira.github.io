@@ -1,3 +1,7 @@
+// =================================================
+// USE REACT CONTEXT API TO MANAGE CAROUSEL STATE
+// =================================================
+
 import React, { createContext, useReducer } from "react";
 
 const initialState = {

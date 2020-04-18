@@ -25,6 +25,10 @@ export default createGlobalStyle`
         --color-hovered: #f5f5f5;
         --color-primary: #85cff9;
 
+        --font-normal: 14px;
+        --font-small: 10px;
+        --font-big: 24px;
+
         --transition: all 0.2s ease-in-out;
 
         height: 100%;
