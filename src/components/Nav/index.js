@@ -1,90 +1,45 @@
-import "./styles.scss";
+import React, { useContext } from "react";
 
-import { queryAll, query } from "../../utils";
+import { store, actions } from "../../store";
 
-import { getEmbla } from "../Embla";
+import Logo from "../NavLogotipo";
 
-import About from "../../content/about";
+import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
-let { logotipo } = About;
+import Button from "../Button";
 
-let useColored = logotipo.match(/\./g);
+import * as S from "./styles";
 
-let colored, start, end;
-
-if (useColored) {
-  const parts = logotipo.split(".");
-
-  const divIndex = Math.floor(parts.length / 2);
-
-  [colored] = parts.filter((item, i) => i === divIndex);
-  start = parts.filter((item, i) => i < divIndex);
-  end = parts.filter((item, i) => i > divIndex);
-}
-
-export default function Nav() {
-  return {
-    render: async () => {
-      const html = `
-            <nav class="nav-wrapper">
-                <div class="nav__container">
-                    <a class="nav__logotipo__wrapper">
-                        ${
-                          useColored
-                            ? `
-                        <p class="nav__logotipo">${start.join(".")}.</p>
-                        <p class="nav__logotipo--colored">${colored}</p>
-                        <p class="nav__logotipo">.${end.join(".")}</p>
-                        `
-                            : `
-                            <p class="nav__logotipo">${About.logotipo}</p>
-                        `
-                        }
-                    </a>
-                    
-                    <div class="nav-buttons">
-                        <a index="0" class="nav-buttons__button nav-buttons__button--active" href="#">about</a>
-                        <a index="1" class="nav-buttons__button" href="#">skills</a>
-                    </div>
-                </div>
-            </nav>
-        `;
-
-      return html;
-    },
-    after_render: async () => {
-      const embla = getEmbla();
-
-      const buttons = queryAll(".nav-buttons__button");
-
-      let currentIndex = 0;
-
-      const setCurrentIndex = (newIndex) => {
-        if (newIndex === currentIndex) return;
-
-        if (embla.selectedScrollSnap().toString() !== newIndex)
-          embla.scrollTo(Number(newIndex));
-
-        currentIndex = newIndex;
-
-        for (const button of buttons) {
-          if (button.getAttribute("index") === currentIndex)
-            button.classList.add("nav-buttons__button--active");
-          else button.classList.remove("nav-buttons__button--active");
-        }
-      };
-
-      for (const button of buttons) {
-        button.onclick = (e) => {
-          setCurrentIndex(e.target.getAttribute("index"));
-        };
-      }
-
-      query(".nav__logotipo__wrapper").onclick = (e) => setCurrentIndex("0");
-
-      embla.on("select", () => {
-        setCurrentIndex(embla.selectedScrollSnap().toString());
-      });
-    },
-  };
-}
+export default () => {
+  const { state, dispatch } = useContext(store);
+  console.log(state);
+  return (
+    <S.NavWrapper>
+      <S.NavContainer>
+        <Logo />
+        <S.ButtonsContainer>
+          <Button
+            as="button"
+            type="button"
+            onClick={() =>
+              state.content.currentIndex !== 0 &&
+              dispatch({ type: actions.SCROLL_TO_ABOUT })
+            }
+          >
+            about
+          </Button>
+          <Button
+            as="button"
+            type="button"
+            onClick={() =>
+              state.content.currentIndex !== 1 &&
+              dispatch({ type: actions.SCROLL_TO_SKILLS })
+            }
+          >
+            skills
+          </Button>
+        </S.ButtonsContainer>
+      </S.NavContainer>
+    </S.NavWrapper>
+  );
+};

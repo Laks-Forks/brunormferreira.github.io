@@ -1,35 +1,40 @@
 {
-  "name": "vanilla-parcel-boilerplate",
-  "version": "1.0.0",
-  "description": "Simple workflow starter for building vanilla JS apps",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node build.js && parcel public/index.html --out-dir development -p 3000",
-    "build": "node build.js && parcel build public/index.html --out-dir dist --public-url ./"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bradtraversy/vanilla-parcel-boilerplate.git"
-  },
-  "keywords": [
-    "parcel"
-  ],
-  "author": "Brad Traversy",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bradtraversy/vanilla-parcel-boilerplate/issues"
-  },
-  "homepage": "https://github.com/bradtraversy/vanilla-parcel-boilerplate#readme",
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/runtime-corejs2": "^7.9.2",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.3",
-    "yaml-front-matter": "^4.1.0"
-  },
+  "name": "bruno.rm.ferreira",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "embla-carousel": "^2.9.0",
-    "feather-icons": "^4.28.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "embla-carousel-react": "^1.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0"
+  },
+  "scripts": {
+    "start": "node build.js && react-scripts start",
+    "build": "node build.js && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "yaml-front-matter": "^4.1.0"
   }
 }

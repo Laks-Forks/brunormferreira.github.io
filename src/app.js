@@ -1,21 +1,18 @@
-import "./imports";
-
-import "./scss/app.scss";
-
-import { getById } from "./utils";
+import React from "react";
 
 import Nav from "./components/Nav";
-import Embla from "./components/Embla";
+import Content from "./components/Content";
 
-addEventListener("DOMContentLoaded", async () => {
-  const root = getById("root");
+import GlobalStyles from "./styles";
 
-  const nav = Nav();
-  const embla = Embla();
+import { StateProvider } from "./store";
 
-  root.innerHTML += await nav.render();
-  root.innerHTML += await embla.render();
-
-  await embla.after_render();
-  await nav.after_render();
-});
+export default () => (
+  <>
+    <GlobalStyles />
+    <StateProvider>
+      <Nav />
+      <Content />
+    </StateProvider>
+  </>
+);
