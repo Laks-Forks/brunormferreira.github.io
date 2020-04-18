@@ -1,6 +1,6 @@
-// ======================================================================
-// THIS FILE BASICALLY GET MARDOWN DATA YAML AND CONVERT TO .JSON FILE
-// ======================================================================
+// =======================================================================================
+// THIS FILE BASICALLY GET MARDOWN DATA YAML AND CONVERT TO .JS THAT EXPORT THE DATA FILE
+// =======================================================================================
 
 let fs = require("fs");
 let yamlFront = require("yaml-front-matter");
