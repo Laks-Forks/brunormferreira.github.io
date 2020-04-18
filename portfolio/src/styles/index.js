@@ -5,11 +5,14 @@ export default createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        border: none;
+        outline: none;
         list-style: none;
         font-family: "Montserrat", sans-serif;
         text-decoration: none;
         -webkit-tap-highlight-color: transparent;
         color: var(--color-normal);
+        background: transparent;
     }
 
     html {
@@ -33,6 +36,7 @@ export default createGlobalStyle`
 
         height: 100%;
     }
+
     #root {
         background: var(--dark);
 
@@ -41,5 +45,9 @@ export default createGlobalStyle`
 
         display: flex;
         flex-direction: column;
+    }
+
+    a, button{
+        cursor: pointer;
     }
 `;
