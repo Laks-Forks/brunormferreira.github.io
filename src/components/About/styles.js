@@ -15,7 +15,7 @@ export const AboutWrapper = styled.div`
 export const DeveloperWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 export const DeveloperJsLogo = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ export const DeveloperName = styled.h1`
   color: var(--color-normal);
   font-size: var(--font-big);
 
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-weight: 400;
 `;
 
@@ -80,5 +80,18 @@ export const DevStats = styled.div`
 // ==================
 export const DevSocial = styled.div`
   display: flex;
-  margin: 2rem 0;
+  margin: 1rem 0;
+`;
+
+// ==================
+// DEV BIO
+// ==================
+export const DevBio = styled.p`
+  color: var(--color);
+
+  max-width: 550px;
+  padding: 1rem;
+
+  text-align: center;
+  line-height: 1.5;
 `;

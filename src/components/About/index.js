@@ -28,7 +28,7 @@ export default () => (
               key={key}
               as="label"
               config={{
-                icon: require("react-icons/fi")[about.social[key].icon],
+                icon: require("react-icons/fi")[about.social[key].statsIcon],
               }}
             >
               {about.social[key].stats}
@@ -53,5 +53,7 @@ export default () => (
         </Button>
       ))}
     </S.DevSocial>
+
+    <S.DevBio>{about.bio}</S.DevBio>
   </S.AboutWrapper>
 );
