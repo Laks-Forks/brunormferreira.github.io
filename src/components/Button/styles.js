@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.div`
-  padding: 1rem;
+  font-size: ${({ config }) => config.fontSize};
+  padding: ${({ config }) => config.padding};
+  color: ${({ config }) => config.color};
 
   display: flex;
   align-items: center;
 
-  color: ${({ config }) => config.color};
-
   transition: var(--transition);
-
-  font-size: ${({ config }) => config.fontSize};
 
   svg {
     margin-right: 12px;

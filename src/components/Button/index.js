@@ -7,6 +7,7 @@ const defaultConfig = {
   color: "var(--color-normal)",
   icon: null,
   fontSize: "var(--font-small)",
+  padding: "1rem",
 };
 
 export default ({

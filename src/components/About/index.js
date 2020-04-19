@@ -20,23 +20,6 @@ export default () => (
 
     <S.DeveloperName>{about.name}</S.DeveloperName>
 
-    <S.DevStats>
-      {Object.keys(about.social).map(
-        (key) =>
-          about.social[key].stats && (
-            <Button
-              key={key}
-              as="label"
-              config={{
-                icon: require("react-icons/fi")[about.social[key].statsIcon],
-              }}
-            >
-              {about.social[key].stats}
-            </Button>
-          )
-      )}
-    </S.DevStats>
-
     <S.DevSocial>
       {Object.keys(about.social).map((key) => (
         <Button
@@ -44,6 +27,7 @@ export default () => (
           as="a"
           href={about.social[key].url}
           config={{
+            padding: "0 1rem",
             icon: require("react-icons/fi")[about.social[key].icon],
           }}
           target="_blank"
@@ -53,6 +37,24 @@ export default () => (
         </Button>
       ))}
     </S.DevSocial>
+
+    <S.DevStats>
+      {Object.keys(about.social).map(
+        (key) =>
+          about.social[key].stats && (
+            <Button
+              key={key}
+              as="label"
+              config={{
+                icon: require("react-icons/fi")[about.social[key].statsIcon],
+                padding: "0 1rem",
+              }}
+            >
+              {about.social[key].stats}
+            </Button>
+          )
+      )}
+    </S.DevStats>
 
     <S.DevBio>{about.bio}</S.DevBio>
   </S.AboutWrapper>

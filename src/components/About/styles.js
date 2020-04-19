@@ -76,7 +76,7 @@ export const DeveloperName = styled.h1`
   color: var(--color-normal);
   font-size: var(--font-big);
 
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-weight: 400;
 `;
 
@@ -86,6 +86,7 @@ export const DeveloperName = styled.h1`
 export const DevStats = styled.div`
   display: flex;
   user-select: none;
+  margin: 2rem 0;
 `;
 
 // ==================
@@ -93,7 +94,6 @@ export const DevStats = styled.div`
 // ==================
 export const DevSocial = styled.div`
   display: flex;
-  margin: 1rem 0;
   user-select: none;
 `;
 
@@ -103,8 +103,9 @@ export const DevSocial = styled.div`
 export const DevBio = styled.p`
   color: var(--color);
 
-  max-width: 550px;
+  max-width: 400px;
   padding: 1rem;
+  padding-top: 0;
 
   text-align: center;
   line-height: 2;
