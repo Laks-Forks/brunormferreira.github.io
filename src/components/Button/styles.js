@@ -10,6 +10,8 @@ export const ButtonWrapper = styled.div`
 
   transition: var(--transition);
 
+  font-size: ${({ config }) => config.fontSize};
+
   svg {
     margin-right: 12px;
   }

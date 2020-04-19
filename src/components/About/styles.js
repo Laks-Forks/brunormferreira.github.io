@@ -8,6 +8,8 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
 
   padding: 1rem;
+
+  height: 100%;
 `;
 // ==================
 // JS DEVELOPER
@@ -16,6 +18,7 @@ export const DeveloperWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  user-select: none;
 `;
 export const DeveloperJsLogo = styled.div`
   display: flex;
@@ -36,6 +39,13 @@ export const DeveloperJsLogo = styled.div`
 
   font-weight: 500;
   font-size: var(--font-normal);
+
+  transition: var(--transition);
+  &:hover {
+    color: #111;
+    background: #f7df1e;
+    border-color: #f7df1e;
+  }
 `;
 export const DeveloperText = styled.p`
   color: var(--color);
@@ -47,6 +57,8 @@ export const DeveloperText = styled.p`
 // PROFILE PHOTO
 // ==================
 export const ProfilePhoto = styled.img`
+  user-select: none;
+
   object-fit: cover;
   object-position: center;
   border: 3px solid var(--color-normal);
@@ -73,6 +85,7 @@ export const DeveloperName = styled.h1`
 // ==================
 export const DevStats = styled.div`
   display: flex;
+  user-select: none;
 `;
 
 // ==================
@@ -81,6 +94,7 @@ export const DevStats = styled.div`
 export const DevSocial = styled.div`
   display: flex;
   margin: 1rem 0;
+  user-select: none;
 `;
 
 // ==================
@@ -93,5 +107,5 @@ export const DevBio = styled.p`
   padding: 1rem;
 
   text-align: center;
-  line-height: 1.5;
+  line-height: 2;
 `;

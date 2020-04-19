@@ -30,7 +30,7 @@ export default createGlobalStyle`
 
         --font-normal: 1.1em;
         --font-small: 0.8em;
-        --font-big: 1.8em;
+        --font-big: 1.5em;
 
         --transition: all 0.2s ease-in-out;
 
