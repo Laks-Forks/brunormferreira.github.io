@@ -19,10 +19,15 @@ export const ButtonWrapper = styled.div`
     transition: var(--transition);
   }
 
-  &:hover {
-    color: var(--color-hovered);
-    * {
+  &:not(.primary) {
+    &:hover {
       color: var(--color-hovered);
+      * {
+        color: var(--color-hovered);
+      }
     }
+  }
+  &.primary {
+    color: var(--color-primary);
   }
 `;

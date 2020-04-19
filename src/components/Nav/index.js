@@ -4,8 +4,6 @@ import { store, actions } from "../../store";
 
 import Logo from "../NavLogotipo";
 
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-
 import Button from "../Button";
 
 import * as S from "./styles";
@@ -19,6 +17,9 @@ export default () => {
         <Logo />
         <S.ButtonsContainer>
           <Button
+            config={{
+              variant: state.content.currentIndex === 0 && "primary",
+            }}
             as="button"
             type="button"
             onClick={() =>
@@ -29,6 +30,9 @@ export default () => {
             about
           </Button>
           <Button
+            config={{
+              variant: state.content.currentIndex === 1 && "primary",
+            }}
             as="button"
             type="button"
             onClick={() =>

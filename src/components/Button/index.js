@@ -10,11 +10,15 @@ const defaultConfig = {
 };
 
 export default ({
-  config: { icon: Icon, ...config } = {},
+  config: { icon: Icon, variant, ...config } = {},
   children,
   ...rest
 }) => (
-  <S.ButtonWrapper config={Object.assign({}, defaultConfig, config)} {...rest}>
+  <S.ButtonWrapper
+    className={variant}
+    config={Object.assign({}, defaultConfig, config)}
+    {...rest}
+  >
     {Icon && <Icon />}
     {children}
   </S.ButtonWrapper>
