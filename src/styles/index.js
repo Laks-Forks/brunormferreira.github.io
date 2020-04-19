@@ -39,7 +39,6 @@ export default createGlobalStyle`
 
     #root {
         background: var(--dark);
-
         height: 100%;
         min-height: 580px;
 

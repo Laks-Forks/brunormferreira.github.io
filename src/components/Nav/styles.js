@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NavWrapper = styled.nav`
   display: flex;
   justify-content: center;
+  z-index: 5;
 `;
 
 export const NavContainer = styled.div`
