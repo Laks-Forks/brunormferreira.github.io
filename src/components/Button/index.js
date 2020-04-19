@@ -3,7 +3,6 @@ import React from "react";
 import * as S from "./styles";
 
 const defaultConfig = {
-  fontSize: 12,
   color: "var(--color-normal)",
   icon: null,
   fontSize: "var(--font-small)",
