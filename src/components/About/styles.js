@@ -29,7 +29,7 @@ export const DeveloperJsLogo = styled.div`
   font-family: Arial, Helvetica, sans-serif, sans-serif;
 
   padding: 3px 5px;
-  border-radius: 10px;
+  border-radius: 8px;
 
   width: 45px;
   height: 45px;
@@ -66,4 +66,19 @@ export const DeveloperName = styled.h1`
 
   margin: 2rem 0;
   font-weight: 400;
+`;
+
+// ==================
+// DEV SOCIAL STATS
+// ==================
+export const DevStats = styled.div`
+  display: flex;
+`;
+
+// ==================
+// DEV SOCIAL LINKS
+// ==================
+export const DevSocial = styled.div`
+  display: flex;
+  margin: 2rem 0;
 `;
