@@ -8,7 +8,6 @@ export const ContentWrapper = styled(Embla)`
 `;
 export const ContentContainer = styled.div`
   display: flex;
-  height: 100%;
 `;
 export const ContentItem = styled.div`
   flex: 0 0 100%;

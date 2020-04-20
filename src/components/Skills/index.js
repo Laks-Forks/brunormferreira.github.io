@@ -10,7 +10,7 @@ export default () => (
   <S.SkillsWrapper>
     <S.SkillsContainer>
       {Object.keys(skills).map((key) => (
-        <SkillItem skill={{ ...skills[key], name: key }} />
+        <SkillItem key={key} skill={{ ...skills[key], name: key }} />
       ))}
     </S.SkillsContainer>
   </S.SkillsWrapper>

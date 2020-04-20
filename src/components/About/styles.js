@@ -46,6 +46,10 @@ export const DeveloperJsLogo = styled.div`
     background: #f7df1e;
     border-color: #f7df1e;
   }
+
+  @media screen and (max-width: 390px) {
+    display: none;
+  }
 `;
 export const DeveloperText = styled.p`
   color: var(--color);

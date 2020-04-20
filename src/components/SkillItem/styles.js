@@ -1,13 +1,36 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
-export const Skill = styled.div`
+import { random } from "../../utils";
+
+function generateAnimation() {
+  const opacity = keyframes`
+    to {
+      opacity: 0.5;
+    }
+    from {
+      opacity: 1;
+    }
+  `;
+  const animation = css`
+    animation: ${opacity} ${random(1, 3)}s linear 0s infinite alternate;
+  `;
+
+  return animation;
+}
+
+export const Skill = styled.a`
   width: 100%;
   height: 100%;
 
   padding: 1rem;
 
+  max-width: 100px;
+  max-height: 100px;
+
   border-radius: 12px;
   background: var(--content);
+
+  margin: 4px;
 
   img {
     filter: grayscale(100%);
@@ -27,4 +50,6 @@ export const SkillImg = styled.img`
   object-position: center;
 
   transition: var(--transition);
+
+  ${() => generateAnimation()}
 `;

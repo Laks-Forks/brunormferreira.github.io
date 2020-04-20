@@ -1,27 +1,26 @@
 import styled from "styled-components";
 
 export const SkillsWrapper = styled.div`
+  display: block;
+
   height: 100%;
   width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 `;
 
 export const SkillsContainer = styled.div`
-  height: 100%;
   width: 100%;
+
+  background: red;
 
   max-width: 850px;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
-  grid-template-rows: repeat(auto-fit, minmax(50px, 100px));
-
+  display: flex;
   justify-content: center;
   align-content: center;
-  justify-items: center;
-
-  grid-gap: 1.5rem;
+  flex-wrap: wrap;
 `;

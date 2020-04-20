@@ -17,7 +17,8 @@ export default createGlobalStyle`
 
     html {
         width: 100%;
-        height: 100%;
+        min-height: 100%;
+        background: #1a1c22;
     }
 
     body {
@@ -34,20 +35,24 @@ export default createGlobalStyle`
         --font-big: 1.5em;
 
         --transition: all 0.2s ease-in-out;
-
-        height: 100%;
     }
 
     #root {
-        background: var(--dark);
-        height: 100%;
-        min-height: 580px;
-
-        display: flex;
-        flex-direction: column;
+        text-align: center;
     }
 
     a, button{
         cursor: pointer;
+    }
+
+    *.appear{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    *.hidden{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-150px);
     }
 `;

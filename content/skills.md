@@ -24,7 +24,7 @@ webpack:
   img: "webpack.svg"
   description: "A JavaScript module bundler"
 javascript:
-  url: "https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript"
+  url: "https://www.w3schools.com/html/html_scripts.asp"
   img: "javascript.svg"
   description: "Web programming language that allows everything we know on the internet"
 git:
