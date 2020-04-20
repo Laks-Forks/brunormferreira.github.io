@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/brunormferreira.github.io/static/js/main.00693453.chunk.js",
-    "main.js.map": "/brunormferreira.github.io/static/js/main.00693453.chunk.js.map",
+    "main.js": "/brunormferreira.github.io/static/js/main.53ca651c.chunk.js",
+    "main.js.map": "/brunormferreira.github.io/static/js/main.53ca651c.chunk.js.map",
     "runtime-main.js": "/brunormferreira.github.io/static/js/runtime-main.1ead974d.js",
     "runtime-main.js.map": "/brunormferreira.github.io/static/js/runtime-main.1ead974d.js.map",
-    "static/js/2.312bb44c.chunk.js": "/brunormferreira.github.io/static/js/2.312bb44c.chunk.js",
-    "static/js/2.312bb44c.chunk.js.map": "/brunormferreira.github.io/static/js/2.312bb44c.chunk.js.map",
+    "static/js/2.92b68111.chunk.js": "/brunormferreira.github.io/static/js/2.92b68111.chunk.js",
+    "static/js/2.92b68111.chunk.js.map": "/brunormferreira.github.io/static/js/2.92b68111.chunk.js.map",
     "index.html": "/brunormferreira.github.io/index.html",
-    "precache-manifest.f3f48004856c2f55ebf45cab705171fc.js": "/brunormferreira.github.io/precache-manifest.f3f48004856c2f55ebf45cab705171fc.js",
+    "precache-manifest.6a8b1df7b03faca11371558bf95cdb0a.js": "/brunormferreira.github.io/precache-manifest.6a8b1df7b03faca11371558bf95cdb0a.js",
     "service-worker.js": "/brunormferreira.github.io/service-worker.js",
-    "static/js/2.312bb44c.chunk.js.LICENSE.txt": "/brunormferreira.github.io/static/js/2.312bb44c.chunk.js.LICENSE.txt",
+    "static/js/2.92b68111.chunk.js.LICENSE.txt": "/brunormferreira.github.io/static/js/2.92b68111.chunk.js.LICENSE.txt",
     "static/media/angular.svg": "/brunormferreira.github.io/static/media/angular.ddac8f75.svg",
-    "static/media/css.svg": "/brunormferreira.github.io/static/media/css.c8d54e21.svg",
+    "static/media/css.svg": "/brunormferreira.github.io/static/media/css.0684e470.svg",
     "static/media/git.svg": "/brunormferreira.github.io/static/media/git.a5e61872.svg",
     "static/media/github.svg": "/brunormferreira.github.io/static/media/github.8136d6ce.svg",
     "static/media/gitlab.svg": "/brunormferreira.github.io/static/media/gitlab.eef1b72c.svg",
-    "static/media/html.svg": "/brunormferreira.github.io/static/media/html.0a14a528.svg",
+    "static/media/html.svg": "/brunormferreira.github.io/static/media/html.f6d74cb1.svg",
     "static/media/javascript.svg": "/brunormferreira.github.io/static/media/javascript.a745037d.svg",
     "static/media/profile.jpg": "/brunormferreira.github.io/static/media/profile.27c9cccb.jpg",
     "static/media/react.svg": "/brunormferreira.github.io/static/media/react.7daf3d1e.svg",
@@ -24,7 +24,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1ead974d.js",
-    "static/js/2.312bb44c.chunk.js",
-    "static/js/main.00693453.chunk.js"
+    "static/js/2.92b68111.chunk.js",
+    "static/js/main.53ca651c.chunk.js"
   ]
 }

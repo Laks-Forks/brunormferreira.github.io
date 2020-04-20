@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcae7a30095a8ab8ad588a2d1734fe04",
+    "revision": "f5d5b2a0adbfa08fb85d24884b9d2fb4",
     "url": "/brunormferreira.github.io/index.html"
   },
   {
-    "revision": "595acc5eada4ae5c78ab",
-    "url": "/brunormferreira.github.io/static/js/2.312bb44c.chunk.js"
+    "revision": "e9cd151c02c4cf62baa0",
+    "url": "/brunormferreira.github.io/static/js/2.92b68111.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/brunormferreira.github.io/static/js/2.312bb44c.chunk.js.LICENSE.txt"
+    "url": "/brunormferreira.github.io/static/js/2.92b68111.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c93923f7837805599b27",
-    "url": "/brunormferreira.github.io/static/js/main.00693453.chunk.js"
+    "revision": "459c6cf627ac212564d0",
+    "url": "/brunormferreira.github.io/static/js/main.53ca651c.chunk.js"
   },
   {
     "revision": "3b43cbfab34adb3dbeb3",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brunormferreira.github.io/static/media/angular.ddac8f75.svg"
   },
   {
-    "revision": "c8d54e217632b2ce9ca70411af1c14fb",
-    "url": "/brunormferreira.github.io/static/media/css.c8d54e21.svg"
+    "revision": "0684e470f6cbbbb429d15bb8107dd164",
+    "url": "/brunormferreira.github.io/static/media/css.0684e470.svg"
   },
   {
     "revision": "a5e61872a683931ab6bcfbdd05c2c9ef",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brunormferreira.github.io/static/media/gitlab.eef1b72c.svg"
   },
   {
-    "revision": "0a14a5289bfd9589a1964e5ca1f090bc",
-    "url": "/brunormferreira.github.io/static/media/html.0a14a528.svg"
+    "revision": "f6d74cb1179e07c3a0ae04da63123563",
+    "url": "/brunormferreira.github.io/static/media/html.f6d74cb1.svg"
   },
   {
     "revision": "a745037d8380b653a8dbb6a16d4c449c",
