@@ -15,8 +15,6 @@ export const SkillsWrapper = styled.div`
 export const SkillsContainer = styled.div`
   width: 100%;
 
-  background: red;
-
   max-width: 850px;
 
   display: flex;

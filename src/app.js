@@ -10,7 +10,7 @@ import { StateProvider } from "./store";
 export default () => (
   <>
     <GlobalStyles />
-    <Background />
+    {/* <Background /> */}
     <StateProvider>
       <Nav />
       <Content />
