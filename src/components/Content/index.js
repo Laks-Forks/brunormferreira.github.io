@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
 
-import { store, actions } from "../../store";
+import { store } from "../../store";
 
 import About from "../About";
+import Skills from "../Skills";
 
 import * as S from "./styles";
 
 export default () => {
-  const { state, dispatch } = useContext(store);
+  const { state } = useContext(store);
 
   const [embla, setEmbla] = useState(null);
 
@@ -25,7 +26,9 @@ export default () => {
         <S.ContentItem>
           <About />
         </S.ContentItem>
-        <S.ContentItem>Slide 2</S.ContentItem>
+        <S.ContentItem>
+          <Skills />
+        </S.ContentItem>
       </S.ContentContainer>
     </S.ContentWrapper>
   );

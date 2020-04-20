@@ -22,6 +22,7 @@ export default createGlobalStyle`
 
     body {
         --dark: #1a1c22;
+        --content: #31363F;
         --light: #31363f;
 
         --color-normal: #9da5b4;

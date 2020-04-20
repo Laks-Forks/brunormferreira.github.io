@@ -10,6 +10,7 @@ fs.readdirSync("./content").forEach((file) => {
     if (err) throw err;
 
     const content = yamlFront.loadFront(data);
+    delete content.__content;
 
     fs.writeFile(
       __dirname + "/src/content/" + file.split(".")[0] + ".js",
